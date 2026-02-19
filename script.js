@@ -8,10 +8,6 @@ let index = 1;
 let interval;
 let slideWidth;
 
-/* =========================
-   Clone First & Last Slide
-========================= */
-
 const firstClone = slideItems[0].cloneNode(true);
 const lastClone = slideItems[slideItems.length - 1].cloneNode(true);
 
@@ -23,10 +19,6 @@ slides.prepend(lastClone);
 
 const allSlides = document.querySelectorAll(".slide");
 
-/* =========================
-   Set Initial Position
-========================= */
-
 function setSlidePosition() {
   slideWidth = allSlides[index].clientWidth;
   slides.style.transform = `translateX(-${slideWidth * index}px)`;
@@ -34,10 +26,6 @@ function setSlidePosition() {
 
 window.addEventListener("resize", setSlidePosition);
 setSlidePosition();
-
-/* =========================
-   Create Dots
-========================= */
 
 slideItems.forEach((_, i) => {
   const dot = document.createElement("span");
@@ -51,10 +39,6 @@ function updateDots() {
   dots.forEach(dot => dot.classList.remove("active"));
   dots[index - 1]?.classList.add("active");
 }
-
-/* =========================
-   Move Slides
-========================= */
 
 function moveToSlide(i) {
   index = i;
@@ -75,10 +59,6 @@ function prevSlideFunc() {
   moveToSlide(index);
 }
 
-/* =========================
-   Infinite Loop Fix
-========================= */
-
 slides.addEventListener("transitionend", () => {
 
   if (allSlides[index].id === "first-clone") {
@@ -95,9 +75,6 @@ slides.addEventListener("transitionend", () => {
 
 });
 
-/* =========================
-   Controls
-========================= */
 
 next.addEventListener("click", () => {
   stopAutoSlide();
@@ -111,10 +88,6 @@ prev.addEventListener("click", () => {
   startAutoSlide();
 });
 
-/* =========================
-   Auto Slide
-========================= */
-
 function startAutoSlide() {
   interval = setInterval(() => {
     nextSlide();
@@ -127,9 +100,6 @@ function stopAutoSlide() {
 
 startAutoSlide();
 updateDots();
-/* =========================
-   Scroll Reveal
-========================= */
 
 const reveals = document.querySelectorAll(".reveal");
 
@@ -146,9 +116,6 @@ function revealOnScroll() {
 }
 
 window.addEventListener("scroll", revealOnScroll);
-/* =========================
-   Page Loader
-========================= */
 
 window.addEventListener("load", () => {
 
@@ -159,10 +126,6 @@ window.addEventListener("load", () => {
   }, 600);
 
 });
-/* =========================
-   Particle Background (No Shower)
-========================= */
-
 const canvas = document.getElementById("starfield");
 const ctx = canvas.getContext("2d");
 
@@ -176,8 +139,6 @@ function resizeCanvas() {
 
 window.addEventListener("resize", resizeCanvas);
 resizeCanvas();
-
-/* Create Particles */
 
 function initParticles() {
   particles = [];
@@ -196,8 +157,6 @@ function initParticles() {
 
 initParticles();
 
-/* Animation */
-
 function animateParticles() {
   ctx.clearRect(0, 0, w, h);
 
@@ -208,11 +167,9 @@ function animateParticles() {
     ctx.fillStyle = `rgba(255,255,255,${p.opacity})`;
     ctx.fill();
 
-    // Move
     p.x += p.dx;
     p.y += p.dy;
 
-    // Wrap around
     if (p.x < 0) p.x = w;
     if (p.x > w) p.x = 0;
     if (p.y < 0) p.y = h;
@@ -224,3 +181,4 @@ function animateParticles() {
 }
 
 animateParticles();
+
