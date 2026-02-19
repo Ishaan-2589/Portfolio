@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ishaan | Portfolio</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS (we’ll add later) -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div id="loader">
+      <div class="loader-content">
+        <div class="spinner"></div>
+
+        <h2>Ishaan</h2>
+
+        <p>Loading Portfolio...</p>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <h2 class="logo">Ishaan</h2>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <!-- Star Background -->
+      <canvas id="starfield"></canvas>
+
+      <div class="hero-content">
+        <h1>Hi, I'm <span>Ishaan</span></h1>
+        <h3>Aspiring Software Developer</h3>
+
+        <p>
+          I build clean, user-focused digital experiences using modern web
+          technologies.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View Projects</a>
+
+          <a href="assets/resume.pdf" download class="btn btn-outline">
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about reveal">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-content">
+        <p>
+          I'm Ishaan, a Computer Applications student with a strong interest in
+          building clean, practical, and user-focused digital solutions. I
+          started my journey with programming fundamentals in C and gradually
+          explored web development, UI/UX design, and cybersecurity through
+          hands-on projects and internships. I enjoy understanding how systems
+          work — from designing interfaces to building backend logic and
+          securing applications. My goal is to grow into a well-rounded
+          full-stack developer while continuously improving my problem-solving
+          and technical skills.
+        </p>
+
+        <div class="about-cards">
+          <!-- Email -->
+          <a href="mailto:ishaanjims@gmail.com" class="about-card">
+            <span>📧</span>
+            <div>
+              <h4>Email</h4>
+              <p>ishaanjims@gmail.com</p>
+            </div>
+          </a>
+
+          <!-- Phone -->
+          <a href="tel:+917011485587" class="about-card">
+            <span>📞</span>
+            <div>
+              <h4>Phone</h4>
+              <p>+91 70114 85587</p>
+            </div>
+          </a>
+
+          <!-- Location -->
+          <div class="about-card">
+            <span>📍</span>
+            <div>
+              <h4>Location</h4>
+              <p>Delhi, India</p>
+            </div>
+          </div>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://linkedin.com/in/ishaan-bcajims"
+            target="_blank"
+            class="about-card"
+          >
+            <span>💼</span>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>View Profile</p>
+            </div>
+          </a>
+
+          <!-- Education -->
+          <div class="about-card">
+            <span>🎓</span>
+            <div>
+              <h4>Education</h4>
+              <p>BCA (2024–2027)</p>
+            </div>
+          </div>
+
+          <!-- Focus -->
+          <div class="about-card">
+            <span>💻</span>
+            <div>
+              <h4>Focus</h4>
+              <p>Full-Stack Web Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills reveal">
+      <h2 class="section-title">Tech Stack</h2>
+
+      <div class="marquee">
+        <div class="marquee-content">
+          <!-- Repeat items twice for smooth infinite effect -->
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            />
+            <span>HTML5</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            />
+            <span>CSS3</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            />
+            <span>JavaScript</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+            />
+            <span>Java</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            />
+            <span>Python</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+            />
+            <span>C</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            />
+            <span>Bootstrap</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            />
+            <span>MySQL</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+            />
+            <span>PHP</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+            />
+            <span>Figma</span>
+          </div>
+
+          <!-- Duplicate for smooth loop -->
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            />
+            <span>HTML5</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            />
+            <span>CSS3</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            />
+            <span>JavaScript</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+            />
+            <span>Java</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            />
+            <span>Python</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+            />
+            <span>C</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            />
+            <span>Bootstrap</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            />
+            <span>MySQL</span>
+          </div>
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+            />
+            <span>PHP</span>
+          </div>
+
+          <div class="tech-item">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+            />
+            <span>Figma</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects reveal">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="slider">
+        <div class="slides" id="slides">
+          <!-- Slide 1 -->
+          <a
+            href="https://github.com/Ishaan-2589/Codsoft_task3_restaurant_menu"
+            target="_blank"
+            class="slide"
+            style="background-image: url(&quot;assets/projects/spoon.jpg&quot;)"
+          >
+            <div class="slide-content">
+              <h3>The Whispering Spoon</h3>
+              <p>Premium restaurant menu website with modern UI.</p>
+              <span class="view-btn">View on GitHub →</span>
+            </div>
+          </a>
+          <!-- Slide 2 -->
+          <a
+            href="https://github.com/Ishaan-2589/MappingMates"
+            target="_blank"
+            class="slide"
+            style="
+              background-image: url(&quot;assets/projects/mapping.jpg&quot;);
+            "
+          >
+            <div class="slide-content">
+              <h3>Mapping Mates</h3>
+              <p>
+                Route mapping and navigation system focused on usability and
+                performance. (Work in Progress)
+              </p>
+              <span class="view-btn">View on GitHub →</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Arrows -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+        <!-- Dots -->
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience reveal">
+      <h2 class="section-title">Experience & Learning</h2>
+
+      <div class="timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+            <span class="timeline-date">Jul 2025 – Aug 2025</span>
+
+            <h3>Cybersecurity Intern</h3>
+            <h4>Jagannath International Management School</h4>
+
+            <p class="timeline-desc">
+              Worked on Capture The Flag challenges, OSINT investigations,
+              vulnerability testing, and security tools.
+            </p>
+
+            <ul class="learning-list">
+              <li>✔ Performed OSINT & reconnaissance</li>
+              <li>✔ Used Nmap, Burp Suite, SQLmap, Metasploit</li>
+              <li>✔ Practiced web exploitation basics</li>
+              <li>✔ Completed TryHackMe security modules</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+            <span class="timeline-date">Jun 2025 – Jul 2025</span>
+
+            <h3>UI / UX Design Intern</h3>
+            <h4>CodSoft</h4>
+
+            <p class="timeline-desc">
+              Designed modern interfaces, prototypes, and responsive layouts
+              following brand guidelines.
+            </p>
+
+            <ul class="learning-list">
+              <li>✔ Created wireframes & prototypes in Figma</li>
+              <li>✔ Learned typography & color theory</li>
+              <li>✔ Improved user-centered design skills</li>
+              <li>✔ Built mobile and web UI flows</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+    <section id="contact" class="contact reveal">
+      <h2 class="section-title">Let’s Connect</h2>
+
+      <div class="contact-wrapper">
+        <!-- Contact Form -->
+        <form class="contact-form">
+          <h3>Send Me a Message</h3>
+
+          <input type="text" placeholder="Your Name" required />
+
+          <input type="email" placeholder="Your Email" required />
+
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-cards">
+          <a href="mailto:ishaanjims@gmail.com" class="contact-card">
+            📧
+            <div>
+              <h4>Email</h4>
+              <p>ishaanjims@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="tel:+917011485587" class="contact-card">
+            📞
+            <div>
+              <h4>Phone</h4>
+              <p>+91&nbsp;7011485587</p>
+            </div>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/ishaan-bcajims"
+            target="_blank"
+            class="contact-card"
+          >
+            💼
+            <div>
+              <h4>LinkedIn</h4>
+              <p>Connect with me</p>
+            </div>
+          </a>
+
+          <div class="contact-card">
+            📍
+            <div>
+              <h4>Location</h4>
+              <p>Delhi, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Ishaan | All Rights Reserved</p>
+    </footer>
+
+    <!-- JS (we’ll add later) -->
+    <script src="script.js"></script>
+  </body>
+</html>
